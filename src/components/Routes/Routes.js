@@ -3,6 +3,7 @@ import Main from "../../layouts/Main";
 import Home from "../Home/Home";
 import ContactUs from "../ContactUs/ContactUs";
 import NotFound from "../NotFound/NotFound";
+import CartPage from "../CartPage/CartPage";
 
 const router = createBrowserRouter([
     {
@@ -18,8 +19,12 @@ const router = createBrowserRouter([
                 element: <ContactUs />
             },
             {
+                path: "/cart",
+                element: <CartPage />
+            },
+            {
                 path: "*",
-                element: <NotFound/>
+                element: <NotFound />
             },
         ]
     }
