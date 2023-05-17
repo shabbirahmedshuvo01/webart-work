@@ -3,7 +3,7 @@ import imgLogo from "../../images/logo-nav.png";
 
 const Footer = () => {
     return (
-        <div className=' bg-black text-white'>
+        <div className='py-5  bg-black text-white'>
             <section className='flex flex-row items-center justify-between mx-20'>
                 <div className='text-white'>
                     <img src={imgLogo} alt="" />
