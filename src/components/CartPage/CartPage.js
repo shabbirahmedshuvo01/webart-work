@@ -21,16 +21,33 @@ const CartPage = () => {
             <div className="card w-96 bg-base-100 shadow-xl">
                 <div className="card-body flex flex-row">
                     <div>
-                        <h2 className="card-title text-start text-sm">{items.name}</h2>
-                        <p className='text-start text-xs'><span className='font-semibold'>Price $:</span> <span>{items.price}</span></p>
-                        <p className='text-start text-xs'><span className='font-semibold'>Delivery Time:</span> <span>{items.dTime}</span></p>
+
+                        {
+                            items ? <>
+                                <h2 className="card-title text-start text-sm">{items.name}</h2>
+                                <p className='text-start text-xs'><span className='font-semibold'>Price $:</span> <span>{items.price}</span></p>
+                                <p className='text-start text-xs'><span className='font-semibold'>Delivery Time:</span> <span>{items.dTime}</span></p>
+                            </>
+                                :
+                                <h1>!Please Add A Package</h1>
+                        }
+
                     </div>
-                    <div>
-                        <button className="btn btn-primary bg-red-500">Delete</button>
-                    </div>
-                    <div className="">
-                        <button className="btn btn-primary">Buy Now</button>
-                    </div>
+                    {
+                      
+                      items ? 
+                      <>
+
+                            <div>
+                                <button className="btn btn-primary bg-red-500">Delete</button>
+                            </div>
+                            <div className="">
+                                <button className="btn btn-primary">Buy Now</button>
+                            </div>
+                        </>
+                        :
+                        ""
+                    }
                 </div>
             </div>
         </div>
