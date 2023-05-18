@@ -2,13 +2,38 @@ import React from 'react';
 
 const Cards = () => {
 
-    
+
+    const addToCart = uId => {
+
+
+        if (uId === 1) {
+            // console.log(uId)
+            const package1 = { id: 1, name: 'Basic package', price: 29, dTime: 3 };
+            localStorage.setItem('package-work', JSON.stringify(package1));
+        }
+        else if (uId === 2) {
+            // console.log(uId)
+            const package2 = { id: 2, name: 'Standard package', price: 99, dTime: 3 };
+            localStorage.setItem('package-work', JSON.stringify(package2));
+        }
+        else if (uId === 3) {
+            // console.log(uId)
+            const package3 = { id: 3, name: 'Premium package', price: 149, dTime: 4 };
+            localStorage.setItem('package-work', JSON.stringify(package3));
+        }
+
+        else {
+            window.alert("Package Not Founde")
+        }
+
+    }
+
 
     return (
         <div>
             <h1 className='text-4xl font-bold'>Pricing Plans</h1>
 
-            <section className='my-20 mx-20 flex flex-row justify-evenly items-center'>
+            <section className='mb-16 mx-20 flex flex-row justify-evenly items-center'>
 
                 <div className='border border-primary h-96 w-64 rounded-lg shadow-2xl'>
                     <div className='bg-primary w-64 h-20 text-white  justify-center rounded-t-lg'>
@@ -39,7 +64,7 @@ const Cards = () => {
                             <p>3 Days Delivery</p>
                         </div>
                     </div>
-                    <button className='btn btn-primary w-56 mt-5'>Add To Cart</button>
+                    <button onClick={() => addToCart(1)} className='btn btn-primary w-56 mt-5'>Add To Cart</button>
                 </div>
                 <div className='border border-orange-400 h-5/6 pb-5 mt-5 w-64 rounded-lg shadow-2xl'>
                     <div className='bg-orange-400 w-64 h-20 text-white  justify-center rounded-t-lg'>
@@ -72,7 +97,7 @@ const Cards = () => {
                             <p>3 Days Delivery</p>
                         </div>
                     </div>
-                    <button className='btn bg-orange-400 border-none w-56 mt-5'>Add To Cart</button>
+                    <button onClick={() => addToCart(2)} className='btn bg-orange-400 border-none w-56 mt-5'>Add To Cart</button>
                 </div>
 
 
@@ -109,7 +134,7 @@ const Cards = () => {
                             <p>4 Days Delivery</p>
                         </div>
                     </div>
-                    <button className='btn bg-red-500 border-none w-56 mt-5'>Add To Cart</button>
+                    <button onClick={() => addToCart(3)} className='btn bg-red-500 border-none w-56 mt-5'>Add To Cart</button>
                 </div>
             </section>
 

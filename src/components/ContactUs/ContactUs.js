@@ -19,29 +19,29 @@ const ContactUs = () => {
                 <form className='flex flex-col gap-5 pb-40' >
                     <div className='flex gap-5'>
                         <div>
-                            <label class="label">
-                                <span class="label-text text-black font-semibold">Full name</span>
+                            <label className="label">
+                                <span className="label-text text-black font-semibold">Full name</span>
                             </label>
                             <input required name='name' className='input w-full px-5  border-black' type='text' placeholder='Your name' />
                         </div>
                         <div>
-                            <label class="label">
-                                <span class="label-text text-black font-semibold">Company Name</span>
+                            <label className="label">
+                                <span className="label-text text-black font-semibold">Company Name</span>
                             </label>
                             <input required name='name' className='input w-full px-5 border-black' type='text' placeholder='Company Name' />
                         </div>
                     </div>
                     <div className='flex gap-5'>
                         <div>
-                            <label class="label">
-                                <span class="label-text text-black font-semibold">Email</span>
+                            <label className="label">
+                                <span className="label-text text-black font-semibold">Email</span>
                             </label>
                             <input required name='Email' className='input w-full px-5  border-black' type='text' placeholder='Email' />
                         </div>
 
                         <div className=''>
-                            <label class="label">
-                                <span class="label-text text-black font-semibold">Type's of work</span>
+                            <label className="label">
+                                <span className="label-text text-black font-semibold">Type's of work</span>
                             </label>
                             <select className='input border-black w-56 px-5' name="Type's of work" id="work">
                                 <option placeholder="Type's of work" value="">-Select-</option>
@@ -49,8 +49,8 @@ const ContactUs = () => {
                         </div>
                     </div>
                     <div className="">
-                        <label class="label">
-                            <span class="label-text text-black font-semibold">Please tell us a bit about  yout project</span>
+                        <label className="label">
+                            <span className="label-text text-black font-semibold">Please tell us a bit about  yout project</span>
                         </label>
                         <textarea required name='message' className='textarea w-full px-5 border-black resize-none' placeholder='Your message'></textarea>
                     </div>
