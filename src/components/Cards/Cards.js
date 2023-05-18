@@ -66,75 +66,86 @@ const Cards = () => {
                     </div>
                     <button onClick={() => addToCart(1)} className='btn btn-primary w-56 mt-5'>Add To Cart</button>
                 </div>
-                <div className='border border-orange-400 h-5/6 pb-5 mt-5 w-64 rounded-lg shadow-2xl'>
-                    <div className='bg-orange-400 w-64 h-20 text-white  justify-center rounded-t-lg'>
-                        <h1 className='text-xl pt-5'>standard package</h1>
-                        <h1 className='text-xl pb-2'>$99 <span className='text-sm'>/Start From</span> </h1>
-                    </div>
-                    <div className='mt-5 text-xs flex flex-row justify-center items-center gap-x-3'>
 
-                        <div className='text-orange-400 flex flex-col text-start gap-y-2'>
-                            <p>✔</p>
-                            <p className='mt-4'>✔</p>
-                            <p>✔</p>
-                            <p>✔</p>
-                            <p>✔</p>
-                            <p>✔</p>
-                            <p>✔</p>
-                            <p>✔</p>
-                            <p>✔</p>
-                        </div>
-
-                        <div className='flex flex-col gap-y-2 text-start'>
-                            <p>2 concept included with Hi <br /> quality design</p>
-                            <p>Logo Transparency</p>
-                            <p>Vector File</p>
-                            <p>Printable File</p>
-                            <p>Include 3D Mockup</p>
-                            <p>Include source file</p>
-                            <p>Include social media kit</p>
-                            <p>Unlimited Revisions</p>
-                            <p>3 Days Delivery</p>
-                        </div>
+                <div>
+                    <div className='border border-orange-400 w-20 rounded-lg ml-20'>
+                        <h1 className='text-xs flex flex-row gap-1'><span className='ml-1'>Most</span> <span>Popular</span></h1>
                     </div>
-                    <button onClick={() => addToCart(2)} className='btn bg-orange-400 border-none w-56 mt-5'>Add To Cart</button>
+                    <div className='border border-orange-400 h-5/6 pb-5 w-64 rounded-lg shadow-2xl'>
+                        <div className='bg-orange-400 w-64 h-20 text-white  justify-center rounded-t-lg'>
+                            <h1 className='text-xl pt-5'>standard package</h1>
+                            <h1 className='text-xl pb-2'>$99 <span className='text-sm'>/Start From</span> </h1>
+                        </div>
+                        <div className='mt-5 text-xs flex flex-row justify-center items-center gap-x-3'>
+
+                            <div className='text-orange-400 flex flex-col text-start gap-y-2'>
+                                <p>✔</p>
+                                <p className='mt-4'>✔</p>
+                                <p>✔</p>
+                                <p>✔</p>
+                                <p>✔</p>
+                                <p>✔</p>
+                                <p>✔</p>
+                                <p>✔</p>
+                                <p>✔</p>
+                            </div>
+
+                            <div className='flex flex-col gap-y-2 text-start'>
+                                <p>2 concept included with Hi <br /> quality design</p>
+                                <p>Logo Transparency</p>
+                                <p>Vector File</p>
+                                <p>Printable File</p>
+                                <p>Include 3D Mockup</p>
+                                <p>Include source file</p>
+                                <p>Include social media kit</p>
+                                <p>Unlimited Revisions</p>
+                                <p>3 Days Delivery</p>
+                            </div>
+                        </div>
+                        <button onClick={() => addToCart(2)} className='btn bg-orange-400 border-none w-56 mt-5'>Add To Cart</button>
+                    </div>
                 </div>
 
 
-                <div className='border border-red-500 h-5/6 pb-5 mt-10 w-64 rounded-lg shadow-2xl'>
-                    <div className='bg-red-500 w-64 h-20 text-white  justify-center rounded-t-lg'>
-                        <h1 className='text-xl pt-5'>premium package</h1>
-                        <h1 className='text-xl pb-2'>$149 <span className='text-sm'>/Start From</span> </h1>
+                <div>
+                    <div className='border border-red-500 w-32 rounded-lg ml-16 mt-5'>
+                        <h1 className='text-xs flex flex-row gap-1'><span className='ml-1'>Highly</span> <span>Recommended</span></h1>
                     </div>
-                    <div className='mt-5 text-xs flex flex-row justify-center items-center gap-x-3'>
-
-                        <div className='text-red-500 flex flex-col text-start gap-y-2'>
-                            <p>✔</p>
-                            <p className='mt-4'>✔</p>
-                            <p>✔</p>
-                            <p>✔</p>
-                            <p>✔</p>
-                            <p>✔</p>
-                            <p>✔</p>
-                            <p>✔</p>
-                            <p>✔</p>
-                            <p>✔</p>
+                    <div className='border border-red-500 h-5/6 pb-5 w-64 rounded-lg shadow-2xl'>
+                        <div className='bg-red-500 w-64 h-20 text-white  justify-center rounded-t-lg'>
+                            <h1 className='text-xl pt-5'>premium package</h1>
+                            <h1 className='text-xl pb-2'>$149 <span className='text-sm'>/Start From</span> </h1>
                         </div>
+                        <div className='mt-5 text-xs flex flex-row justify-center items-center gap-x-3'>
 
-                        <div className='flex flex-col gap-y-2 text-start'>
-                            <p>3 concept included with <br /> Premium quality design</p>
-                            <p>Logo Transparency</p>
-                            <p>Vector File</p>
-                            <p>Printable File</p>
-                            <p>Include 3D Mockup</p>
-                            <p>Include source file</p>
-                            <p>Stationery designs</p>
-                            <p>Include social media kit</p>
-                            <p>Unlimited Revisions</p>
-                            <p>4 Days Delivery</p>
+                            <div className='text-red-500 flex flex-col text-start gap-y-2'>
+                                <p>✔</p>
+                                <p className='mt-4'>✔</p>
+                                <p>✔</p>
+                                <p>✔</p>
+                                <p>✔</p>
+                                <p>✔</p>
+                                <p>✔</p>
+                                <p>✔</p>
+                                <p>✔</p>
+                                <p>✔</p>
+                            </div>
+
+                            <div className='flex flex-col gap-y-2 text-start'>
+                                <p>3 concept included with <br /> Premium quality design</p>
+                                <p>Logo Transparency</p>
+                                <p>Vector File</p>
+                                <p>Printable File</p>
+                                <p>Include 3D Mockup</p>
+                                <p>Include source file</p>
+                                <p>Stationery designs</p>
+                                <p>Include social media kit</p>
+                                <p>Unlimited Revisions</p>
+                                <p>4 Days Delivery</p>
+                            </div>
                         </div>
+                        <button onClick={() => addToCart(3)} className='btn bg-red-500 border-none w-56 mt-5'>Add To Cart</button>
                     </div>
-                    <button onClick={() => addToCart(3)} className='btn bg-red-500 border-none w-56 mt-5'>Add To Cart</button>
                 </div>
             </section>
 
